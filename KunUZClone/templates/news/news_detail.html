@@ -1,0 +1,9 @@
+{% extends "news/base.html" %}
+{% load static %}
+
+{% block content %}
+    <h3>{{ news.title }}</h3>
+    <p>Sana: {{ news.published_time }}</p>
+    <p>{{ news.body }}</p>
+    <img src="{{ news.image.url }}">
+{% endblock content %}
